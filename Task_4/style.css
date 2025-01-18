@@ -1,0 +1,178 @@
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient Background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1.5s ease-in-out; /* Fade in animation */
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Card Container */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-out; /* Slide-in animation */
+}
+
+/* Keyframe for slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover Effect on Card */
+.container:hover {
+    transform: translateY(-15px); /* Lift the card on hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Stronger shadow when hovered */
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInText 1.5s ease-out; /* Text fade-in animation */
+}
+
+/* Keyframe for title text fade-in */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Input Fields */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9; /* Light grey background for inputs */
+}
+
+form input:focus {
+    border-color: #2575fc; /* Blue border when input is focused */
+    box-shadow: 0 0 12px rgba(37, 117, 252, 0.3); /* Light blue glow */
+    outline: none;
+    background-color: #ffffff; /* White background when focused */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc !important;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+}
+
+form button:hover {
+    background-color: #6a11cb; /* Purple color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 10px 25px rgba(37, 117, 252, 0.4); /* Stronger glow on hover */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Register Link */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a11cb; /* Hover effect on link */
+}
+
+/* Subtle Background Animation */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+body {
+    animation: backgroundMove 15s linear infinite; /* Moving background */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    form button {
+        font-size: 16px;
+    }
+}
