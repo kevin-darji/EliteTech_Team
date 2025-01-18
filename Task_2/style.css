@@ -1,0 +1,67 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; /* Add some padding to the main content */
+    border-radius: 5px; /* Rounded corners for the main content area */
+    background-color: #fff; /* White background for the main content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the main content */
+}
+
+.bio {
+    margin-bottom: 40px;
+}
+
+.bio img {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.achievements, .vision {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.achievements ul, .vision ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
